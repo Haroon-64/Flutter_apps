@@ -6,7 +6,7 @@ void main() {
   runApp(const MaterialApp(
       // dont have to rebuild consts
       home:
-          Home() // text need to be placed in material ancestor (ex scaffold - base layout) for style
+          Sandbox() // text need to be placed in material ancestor (ex scaffold - base layout) for style
       )); //root widget App
 }
 
@@ -79,10 +79,13 @@ class Sandbox extends StatelessWidget {
                 color: Colors.orange,
                 child: const Text("c"),
               ),
-              Container(
-                width: 50,
-                color: Colors.cyan,
-                child: const Text("d"),
+              Expanded(
+                // fill available space
+                child: Container(
+                  width: 50,
+                  color: Colors.cyan,
+                  child: const Text("d"),
+                ),
               )
             ],
           ),

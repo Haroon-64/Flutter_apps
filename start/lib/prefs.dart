@@ -30,9 +30,11 @@ class Prefs extends StatelessWidget {
           children: [
             const Text("suggar ", style: TextStyle(color: Colors.grey)),
             const Text("2"),
-            Image.asset(
+            Image.asset( 
               'assets/img/oh.png',
               width: 25,
+              // height: 100, // layout should not overflow in such use scrollable parts or expanded widget (grows to take rest of avialible space)
+
             ),
             const SizedBox(
               width: 50,
