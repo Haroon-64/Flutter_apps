@@ -1,6 +1,6 @@
 # learning
 
-A new Flutter project.
+Practice apps.
 
 ## Getting Started
 
