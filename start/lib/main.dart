@@ -46,7 +46,7 @@ class Sandbox extends StatelessWidget {
         // align on main axis(direction of content-  vertical) by default
         mainAxisAlignment: MainAxisAlignment
             .center, // align on main axis(direction of content- vertical) by default
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+
         children: [
           Container(
             width: 100,
@@ -59,7 +59,6 @@ class Sandbox extends StatelessWidget {
             child: const Text("2"),
           ),
           Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.spaceBetween, // left to right
             children: [
               Container(
@@ -79,14 +78,13 @@ class Sandbox extends StatelessWidget {
                 color: Colors.orange,
                 child: const Text("c"),
               ),
-              Expanded(
-                // fill available space
-                child: Container(
-                  width: 50,
-                  color: Colors.cyan,
-                  child: const Text("d"),
-                ),
-              )
+
+              // fill available space
+              Container(
+                width: 50,
+                color: Colors.cyan,
+                child: const Text("d"),
+              ),
             ],
           ),
         ],
